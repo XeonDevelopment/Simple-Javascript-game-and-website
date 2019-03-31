@@ -1,0 +1,401 @@
+@import url('https://fonts.googleapis.com/css?family=Work+Sans:400,600');
+body {
+  margin: 0;
+  background: #222;
+  font-family: 'Work Sans', sans-serif;
+  font-weight: 800;
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+/* Sets the header color to green */
+header {
+  background: #55d6aa;
+}
+
+header::after {
+  content: '';
+  display: table;
+  clear: both;
+}
+
+/* 
+Sets the logo to the left
+Sets the logo to auto resize unless over the specified support size of the nav bar.
+
+*/
+
+.logo {
+  float: left;
+  padding: 10px 0;
+  height: auto;
+  width: auto;
+  max-height: 50px;
+  max-width: 250px;
+}
+
+
+/* 
+Sets Navigation bar to the left
+*/
+
+nav {
+  float: right;
+}
+
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+/* 
+Sets Navigation bar text spacing, margin left is the spaces between, padding top is the spacing up and down
+*/
+
+nav li {
+  display: inline-block;
+  margin-left: 50px;
+  padding-top: 23px;
+  position: relative;
+}
+
+/* 
+Sets text in nav, to the color, forces uppercase 
+*/
+
+nav a {
+  color: #444;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 14px;
+}
+
+/* 
+Sets hover color to black
+*/
+
+nav a:hover {
+  color: #000;
+}
+
+/* 
+Sets hero header, with text.
+*/
+
+.mainhead {
+  padding: 200px;
+  text-align: center;
+  background:url('../img/showcase.jpg') -400px;
+  color: white;
+  font-size: 30px;
+}
+
+/* 
+Call to action button that changes on hover 
+*/
+
+.buttoncta {
+  border: none;
+  background: #55d6aa;
+  color: #000000;
+  padding: 10px;
+  font-size: 18px;
+  border-radius: 10px;
+  position: relative;
+  transition: all 500ms; 
+    font-weight: 800;
+
+}
+
+.buttoncta:hover {
+  background: rgba(0,0,0,0);
+  color: #55d6aa;
+  box-shadow: inset 0 0 0 3px #55d6aa;
+}
+
+/* 
+Three Colum CSS Grid
+*/
+
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  background-color: #222;
+  padding: 10px;
+}
+.grid-item {
+  background-color: #222;
+  padding: 50px;
+  font-size: 12px;
+  text-align: center;
+}
+
+
+.contentboxes{
+    padding: 50px;
+  font-size: 12px;
+  text-align: center;
+  font-family: 'Work Sans', sans-serif;
+  color: white;
+}
+
+.contentboxes h1{
+
+  font-size: 40px;
+  text-align: center;
+  font-family: 'Work Sans', sans-serif;
+  color: white;
+}
+
+
+/* Newsletter */
+.ctasignup{
+  padding:50px;
+  color:#ffffff;
+  background:#55d6aa
+}
+
+.ctasignup h1{
+  text-align: center;
+}
+
+.buttonsgn {
+  border: none;
+  background: #55d6aa;
+  color: #FFFFFF;
+  padding: 10px;
+  font-size: 18px;
+  border-radius: 10px;
+  position: relative;
+  box-shadow: inset 0 0 0 3px #FFFFFF;
+}
+
+footer{
+  padding:20px;
+  margin-top:20px;
+  color:#ffffff;
+  background-color:##55d6aa;
+  text-align: center;
+}
+
+
+/* 
+ABOUT PAGE START
+*/
+
+
+.abouthead {
+  padding: 50px;
+  text-align: center;
+  background:url('../img/showcase.jpg') -30px;
+  color: white;
+  font-size: 20px;
+}
+
+.loginhead {
+
+    background-image: url("../img/showcase.jpg");
+
+    /* Full height */
+    height: 100%; 
+
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+
+}
+
+/* 
+Three Colum CSS Grid
+*/
+
+.grid-containerabt {
+  display: grid;
+  grid-template-columns: auto auto ;
+  background-color: #222;
+  padding: 10px;
+}
+.grid-itemabtr {
+  background-color: #222;
+  padding: 50px;
+  font-size: 12px;
+  text-align: right;
+
+
+}
+.grid-itemabtl {
+  background-color: #222;
+  padding: 50px;
+  font-size: 12px;
+  text-align: left;
+  max-width: 500px;
+
+
+}
+
+
+/* 
+For Center Aligning
+*/
+
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+
+/* 
+Instructions Page
+*/
+
+
+.instructions {
+  font-size: 50px;
+  text-align: left;
+  text-align: center;
+}
+
+.instructions h1{
+  font-size: 50px;
+  text-align: left;
+  text-align: center;
+    color: #FFFFFF;
+}
+
+/* 
+Header for Play Page
+*/
+
+
+.playhead {
+  padding: 50px;
+  text-align: center;
+  background:url('../img/showcase.jpg') -30px;
+  color: white;
+  font-size: 20px;
+}
+.gamesection{
+  text-align: center;
+  padding: 50px;
+      background-color: rgb(34, 34, 34);
+}
+
+/* 
+CSS For Scoreboard Design
+*/
+
+
+table {
+    border-collapse: collapse;
+    width: 50%;
+    font-size: 10px;
+}
+
+td {
+    border: 1px solid #222222;
+    text-align: left;
+    color: #222222;
+    padding: 8px;
+}
+
+th{
+      border: 1px solid #222222;
+    text-align: left;
+    color: white;
+    padding: 8px;
+}
+
+tr:nth-child(1) {
+    background-color: #222222;
+}
+
+
+table.style1{
+  font-size: 5px;
+}
+
+/* 
+CSS For Score Designs
+*/
+
+
+.gamescore{
+  padding:25px;
+  color:#ffffff;
+  background:#55d6aa
+}
+
+.gamescore p{
+  font-size: 13px;
+}
+
+
+.scorehead {
+  padding: 50px;
+  text-align: center;
+  background:url('../img/showcase.jpg') -30px;
+  color: white;
+  font-size: 20px;
+}
+
+.scorehead p {
+  font-size: 13px;
+}
+
+textarea:focus, input:focus{
+    outline: none;
+}
+
+/* 
+CSS For Login/Register
+*/
+
+.userdetails { 
+border-color:#55d6aa; 
+color: #FFFFFF; 
+background-color: #242424; 
+border-radius: 10px;
+}
+
+#userpage { 
+color: #55d6aa;
+font-family: 'Work Sans', sans-serif;
+font-weight: 800;
+
+}
+
+/* 
+GAME CSS
+*/
+
+.grid-containergame {
+  text-align: center;
+  display: grid;
+  grid-template-columns: auto;
+  background-color: black;
+  padding: 100px;
+    max-width: 500px;
+}
+
+.gamecontainer{
+	height: 330px;
+	width: 100px;
+	position: absolute;
+	top:50%;
+	left:50%;
+	transform: translateX(-50%) translateY(-50%);
+	background: black;
+	padding: 20px;
+	border: 1px solid #08038C;
+	box-shadow: 0 0 8px 3px #fff;
+    max-width: 500px;
+}
